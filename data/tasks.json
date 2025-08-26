@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "description": "Pray Updated",
-    "status": "todo",
-    "createdAt": "2025-08-26T10:09:09.982Z",
-    "updatedAt": "2025-08-26T10:09:42.273Z"
+    "description": "Pray",
+    "status": "done",
+    "createdAt": "2025-08-26T10:56:34.276Z",
+    "updatedAt": "2025-08-26T10:57:08.458Z"
   },
   {
     "id": 2,
-    "description": "Eat Updated",
-    "status": "todo",
-    "createdAt": "2025-08-26T10:09:12.948Z",
-    "updatedAt": "2025-08-26T10:09:27.547Z"
+    "description": "Sleep",
+    "status": "in-progress",
+    "createdAt": "2025-08-26T10:56:38.604Z",
+    "updatedAt": "2025-08-26T10:57:58.232Z"
   }
 ]
