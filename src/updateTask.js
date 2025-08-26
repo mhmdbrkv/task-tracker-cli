@@ -6,29 +6,30 @@ const dirName = "data";
 const fileName = "tasks.json";
 const dirPath = path.join(__dirname, "..", dirName);
 
-const addTask = async () => {
+const updateTask = async () => {
   try {
-    const [, , , task] = process.argv;
+    const [, , , id, data] = process.argv;
 
-    if (!task) {
-      console.log("Task description is required.");
+    if (!id || !data) {
+      console.log("Task id and data is required for update.");
       return;
     }
-    let taskList = [];
 
+    let taskList = [];
     if (fs.existsSync(path.join(dirPath, fileName))) {
       const file = await fsp.readFile(path.join(dirPath, fileName), "utf-8");
       if (file.trim()) taskList = JSON.parse(file);
     }
 
-    const taskObject = {
-      id: taskList.length + 1,
-      description: task,
-      status: "todo",
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    };
-    taskList.push(taskObject);
+    taskList = taskList.map((task) => {
+      if (task.id == id) {
+        return {
+          ...task,
+          description: data,
+          updatedAt: new Date().toISOString(),
+        };
+      } else return task;
+    });
 
     await fsp.mkdir(dirPath, { recursive: true });
     await fsp.writeFile(
@@ -36,11 +37,10 @@ const addTask = async () => {
       JSON.stringify(taskList, null, 2),
       "utf-8"
     );
-
-    console.log("Task added successfully!");
+    console.log(`Task with id: ${id} updated successfully!`);
   } catch (err) {
-    console.error("Error adding task:", err);
+    console.log("Error updating task:", err);
   }
 };
 
-module.exports = { addTask };
+module.exports = { updateTask };
