@@ -1,16 +1,23 @@
 [
   {
     "id": 1,
-    "description": "Pray",
-    "status": "done",
-    "createdAt": "2025-08-26T10:56:34.276Z",
-    "updatedAt": "2025-08-26T10:57:08.458Z"
+    "description": "DB and SQL from the pdf",
+    "status": "todo",
+    "createdAt": "2025-08-26T12:03:13.638Z",
+    "updatedAt": "2025-08-26T12:03:13.639Z"
   },
   {
     "id": 2,
-    "description": "Sleep",
-    "status": "in-progress",
-    "createdAt": "2025-08-26T10:56:38.604Z",
-    "updatedAt": "2025-08-26T10:57:58.232Z"
+    "description": "Algorithms with c++",
+    "status": "todo",
+    "createdAt": "2025-08-26T12:03:36.032Z",
+    "updatedAt": "2025-08-26T12:03:36.033Z"
+  },
+  {
+    "id": 3,
+    "description": "Node js youtube course",
+    "status": "todo",
+    "createdAt": "2025-08-26T12:04:11.399Z",
+    "updatedAt": "2025-08-26T12:04:11.400Z"
   }
 ]
