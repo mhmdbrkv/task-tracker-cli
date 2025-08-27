@@ -3,6 +3,8 @@
 A simple **command-line interface (CLI)** application built with **Node.js** for managing your daily tasks.  
 You can add, update, delete, mark progress, mark completion, and list tasks easily from the terminal.
 
+This project is inspired by the [Task Tracker project on roadmap.sh](https://roadmap.sh/projects/task-tracker).
+
 ---
 
 ## 🚀 Features
