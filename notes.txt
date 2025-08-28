@@ -1,6 +1,0 @@
-1) Improve The Code
-2) Convert Array Into Map In tasks.json File
-3) Check if task exits before update or delete 
-(when update unexisted task or even file, it creates the file from scratch --> (bad))
-4) when delete => update IDs
-5) make markTask code reusable
